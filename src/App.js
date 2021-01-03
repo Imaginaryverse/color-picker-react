@@ -66,6 +66,8 @@ const App = () => {
           tertiaryMod: intensifyText(tertiaryHex, offsetS, newOffset) 
          })
          break;
+        default:
+          return
 
 
     }
