@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import Display from './components/Display/Display'
 import HexList from './components/HexList/HexList'
 import { HSLToHex, hexToHSL, intensifyText } from './utils'
