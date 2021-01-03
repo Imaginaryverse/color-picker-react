@@ -1,5 +1,4 @@
 import React from 'react'
-import { intensifyText } from '../../utils'
 import ListItem from '../ListItem/ListItem'
 
 const HexList = ({color}) => {

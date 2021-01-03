@@ -4,10 +4,10 @@ import HexList from './components/HexList/HexList'
 import { HSLToHex, hexToHSL, intensifyText } from './utils'
 
 const App = () => {
-  const initialState = { primary: '#000000', secondary: '#000000', tertiary: '#000000', primaryMod: '#000000', secondaryMod: '#000000', tertiaryMod: '#000000'}
+  const initialState = { primary: '#a5a3f5', secondary: '#f5b2a3', tertiary: '#aff5a3', primaryMod: '#211eae', secondaryMod: '#ae391e', tertiaryMod: '#34ae1e'}
 
   const [color, setColor] = useState( initialState )
-  const [hexState, setHexState] = useState( '#000000' )
+  const [hexState, setHexState] = useState( '#a5a3f5' )
   const [offsetH, setOffsetH] = useState( 130 )
   const [offsetS, setOffsetS] = useState( 10 )
   const [offsetL, setOffsetL] = useState( 40 )
@@ -78,13 +78,7 @@ const App = () => {
     const randomHue = Math.floor(Math.random() * 360)
     handleColorChange(HSLToHex(randomHue, 80, 80))
   }
-  useEffect(() => {
-    randomizeHue()
-  }, [randomizeHue])
-
   
-
-
   return (
     <div className="display-wrapper">
       <Display background={ color.primary} text1={ color.secondaryMod} text2={ color.tertiaryMod }/>
