@@ -80,7 +80,7 @@ const App = () => {
   }
   useEffect(() => {
     randomizeHue()
-  }, [])
+  }, [randomizeHue])
 
   
 
